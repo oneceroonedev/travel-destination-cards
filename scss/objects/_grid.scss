@@ -1,0 +1,14 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); //Four columns
+    gap: 30px;
+    padding: 20px;
+    
+    @media (max-width: $bp-tablet) {
+        grid-template-columns: repeat(2, 1fr);  //Two columns
+    }
+
+    @media (max-width: $bp-mobile) {
+        grid-template-columns: 1fr;  //One column
+    }
+}

@@ -1,0 +1,16 @@
+.rating {
+    padding-top: 10px;
+    .icon-star-gold:before {
+        content: "\e901";
+        color: $gold-star;
+      }
+
+    .icon-star-grey:before {
+        content: "\e900";
+        color: $grey-star;
+    }
+
+    :last-child {
+        margin-right: 0;
+    }
+}

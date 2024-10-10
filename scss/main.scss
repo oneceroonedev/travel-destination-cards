@@ -1,0 +1,20 @@
+// 1. Settings (Variables)
+@import 'settings/variables';
+
+// 2. Tools (Mixins)
+@import 'tools/mixins';
+
+// 3. Generic (Reset)
+@import 'generic/reset';
+
+// 4. Elements (Styles for HTML elements)
+@import 'elements/buttons';
+
+// 5. Objects (Grid)
+@import 'objects/grid';
+
+// 6. Components (Component Specific Styles)
+@import 'components/header';
+@import 'components/card';
+@import 'components/rating';
+@import 'components/footer';

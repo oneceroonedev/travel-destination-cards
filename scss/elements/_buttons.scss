@@ -1,0 +1,18 @@
+//Button Primary
+.btn-primary {
+    background-color: $primary-color;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    @include button-text();
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin-bottom: 15px;
+
+    &:hover {
+        background-color: $btn-primary-hover;
+    }
+}

@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    border-bottom: 1px solid $border;
+    margin-bottom: 20px;
+
+    h1 {
+        @include title();
+        padding: 20px;
+    }
+}

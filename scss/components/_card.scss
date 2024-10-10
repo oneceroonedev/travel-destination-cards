@@ -1,0 +1,81 @@
+.city-card {
+    background-color: $base-white;
+    border: 1px solid $border;
+    border-top: 0;
+    border-radius: 5px;
+    max-width: 358px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: min-content;
+
+    .image {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px 5px 0 0;
+        object-fit: cover;
+    }
+
+    .card-info {
+        padding: 10px 15px 15px 15px;
+    }
+
+    .top {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        @include title();
+    }
+
+    .description p {
+        @include text();
+        margin-bottom: 17px;;
+    }
+
+    .featureds {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+
+        li {
+            width: 50%;
+            margin-bottom: 15px;
+
+            span {
+                @include text();
+            }
+        }
+
+        .icon {
+            &:before {
+                font-size: 16px;;
+                color: $primary-color;
+                vertical-align: middle;
+                padding-right: 10px;
+            }
+    
+            &-language-icon:before {
+                content: "\e903";
+            }
+
+            &-currency-icon:before {
+                content: "\e902";
+            }
+    
+            &-weather-icon:before {
+                content: "\e904";
+            }
+        }
+    }
+}

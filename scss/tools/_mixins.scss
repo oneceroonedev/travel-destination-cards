@@ -1,0 +1,59 @@
+@mixin title($size: 32px, $line-height: 36px, $weight: $w-semibold, $color: $title) {
+    & {
+        font-family: $font-family-primary;
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+    
+    @media (max-width: $bp-tablet) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@mixin text($size: 13px, $line-height: 20px, $weight: $w-regular, $color: $text) {
+    & {
+        font-family: $font-family-secondary;
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+    
+    @media (max-width: $bp-tablet) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+@mixin button-text($size: 14px, $line-height: 18px, $weight: $w-semibold, $color: $base-white) {
+    & {
+        font-family: $font-family-secondary;
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+
+    @media (max-width: $bp-tablet) {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    @media (max-width: $bp-mobile) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
