@@ -40,6 +40,9 @@
 .btn-primary:hover {
   background-color: #D29CE0;
 }
+.btn-primary:focus, .btn-primary:active, .btn-primary:visited {
+  background-color: #B26EC9;
+}
 
 .card-grid {
   display: grid;

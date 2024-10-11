@@ -15,4 +15,8 @@
     &:hover {
         background-color: $btn-primary-hover;
     }
+
+    &:focus, &:active, &:visited {
+        background-color: $primary-color;
+    }
 }
